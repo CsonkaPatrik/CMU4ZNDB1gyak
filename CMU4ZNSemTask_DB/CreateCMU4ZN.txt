@@ -1,0 +1,64 @@
+CREATE DATABASE pizza;
+CREATE TABLE Vasarlo
+(
+  utca VARCHAR(20) NOT NULL,
+  varos VARCHAR(20) NOT NULL,
+  irsz INT NOT NULL,
+  Felhasznalonev VARCHAR(20) NOT NULL,
+  Jelszo VARCHAR(20) NOT NULL,
+  PRIMARY KEY (Felhasznalonev)
+);
+
+CREATE TABLE Rendeles
+(
+  ID INT NOT NULL,
+  Ár INT NOT NULL,
+  Ido DATE NOT NULL,
+  Mennyiseg INT NOT NULL,
+  Felhasznalonev VARCHAR(20) NOT NULL,
+  PRIMARY KEY (ID),
+  FOREIGN KEY (Felhasznalonev) REFERENCES Vasarlo(Felhasznalonev)
+);
+
+CREATE TABLE Pizza
+(
+  pizza_ID INT NOT NULL,
+  Ar INT NOT NULL,
+  Nev VARCHAR(20) NOT NULL,
+  PRIMARY KEY (pizza_ID)
+);
+
+CREATE TABLE Hozzavalok
+(
+  ar INT NOT NULL,
+  Nev VARCHAR(20) NOT NULL,
+  hozzavalo_ID INT NOT NULL,
+  PRIMARY KEY (hozzavalo_ID)
+  );
+
+CREATE TABLE Alkalmazott
+(
+  Rang INT NOT NULL,
+  Felhasznalonev VARCHAR(20) NOT NULL,
+  Jelszo VARCHAR(20) NOT NULL,
+  pizza_ID INT NOT NULL,
+  PRIMARY KEY (Rang),
+  FOREIGN KEY (pizza_ID) REFERENCES Pizza(pizza_ID)
+);
+
+CREATE TABLE Csaladtag
+(
+  Nev VARCHAR(20) NOT NULL,
+  Kor INT NOT NULL,
+  Rang INT NOT NULL,
+  FOREIGN KEY (Rang) REFERENCES Alkalmazott(Rang)
+);
+
+CREATE TABLE Felvesz
+(
+  ID INT NOT NULL,
+  Rang INT NOT NULL,
+  PRIMARY KEY (ID, Rang),
+  FOREIGN KEY (ID) REFERENCES Rendeles(ID),
+  FOREIGN KEY (Rang) REFERENCES Alkalmazott(Rang)
+);

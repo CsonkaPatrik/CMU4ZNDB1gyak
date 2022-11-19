@@ -1,0 +1,54 @@
+INSERT INTO Vasarlo VALUES('Petofi utca 27.','Galgamácsa','2183','nagyMiki','asdasd123');
+INSERT INTO Vasarlo VALUES('Kossuth utca 42','Aszód','2170','KisMiki','wasd14');
+INSERT INTO Vasarlo VALUES('Villanyrendör tér 2.','Miskolc','3500','Hofi2','hofi1');
+INSERT INTO Vasarlo VALUES('Kondoros tér 2.','Aszód','2170','Jóseph','jozsika3');
+INSERT INTO Vasarlo VALUES('Kossuth utca 12','Gödöllö','2100','Voster122','eztbiztoselfelejtem');
+INSERT INTO Vasarlo VALUES('Pomogács köz 13.','Iklad','2181','feriakia','12345678');
+
+INSERT INTO Rendeles VALUES(1,6000,'2022/11/21',2,'nagyMiki');
+INSERT INTO Rendeles VALUES(2,3000,'2022/11/21',1,'KisMiki');
+INSERT INTO Rendeles VALUES(3,3000,'2022/11/21',1,'Hofi2');
+INSERT INTO Rendeles VALUES(4,3000,'2022/11/21',1,'Jóseph');
+INSERT INTO Rendeles VALUES(5,9000,'2022/11/22',3,'nagyMiki');
+INSERT INTO Rendeles VALUES(6,6000,'2022/11/22',2,'Voster122');
+INSERT INTO Rendeles VALUES(7,5000,'2022/11/22',2,'feriakia');
+INSERT INTO Rendeles VALUES(8,2500,'2022/11/23',1,'Hofi2');
+INSERT INTO Rendeles VALUES(9,2500,'2022/11/23',1,'nagyMiki');
+INSERT INTO Rendeles VALUES(10,12000,'2022/11/21',4,'nagyMiki');
+
+INSERT INTO Pizza VALUES(1,2500,'songoku');
+INSERT INTO Pizza VALUES(2,3000,'diablo');
+INSERT INTO Pizza VALUES(3,2500,'magyaros');
+INSERT INTO Pizza VALUES(4,3000,'almas');
+INSERT INTO Pizza VALUES(5,2500,'hawaii');
+INSERT INTO Pizza VALUES(6,2500,'margarita');
+INSERT INTO Pizza VALUES(7,2500,'gombas');
+INSERT INTO Pizza VALUES(8,3000,'sonkas');
+INSERT INTO Pizza VALUES(9,2500,'kukoricas');
+INSERT INTO Pizza VALUES(10,2500,'vega');
+
+INSERT INTO Hozzavalok VALUES(1000,'paradicsomszosz',1);
+INSERT INTO Hozzavalok VALUES(3000,'sajt',2);
+INSERT INTO Hozzavalok VALUES(500,'liszt',3);
+INSERT INTO Hozzavalok VALUES(1500,'sonka',4);
+INSERT INTO Hozzavalok VALUES(1300,'szalami',5);
+INSERT INTO Hozzavalok VALUES(300,'paprika',6);
+INSERT INTO Hozzavalok VALUES(900,'gomba',7);
+INSERT INTO Hozzavalok VALUES(400,'kukorica',8);
+
+INSERT INTO Alkalmazott VALUES(1,'NagyMiklos','giganiga1',1);
+INSERT INTO Alkalmazott VALUES(2,'KisMiklos','asd123',5);
+INSERT INTO Alkalmazott VALUES(3,'MiklosAron','wasd2121',10);
+
+INSERT INTO Csaladtag VALUES('KisJanos',12,1);
+INSERT INTO Csaladtag VALUES('NagyJanos',10,2);
+INSERT INTO Csaladtag VALUES('KissBela',18,3);
+INSERT INTO Csaladtag VALUES('MorvaiAnna',24,1);
+
+INSERT INTO Felvesz VALUES(1,1);
+INSERT INTO Felvesz VALUES(2,2);
+INSERT INTO Felvesz VALUES(3,1);
+INSERT INTO Felvesz VALUES(4,3);
+INSERT INTO Felvesz VALUES(5,2);
+
+
