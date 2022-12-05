@@ -1,0 +1,35 @@
+- П cím (könyv) 
+- σ ar > 2000 (könyv) 
+- П cím ( σ ar < 1000 (könyv)) 
+- П targy (könyv) 
+- П cím, ar (σ targy = ’AB’ (könyv))
+
+
+- Г count(*) (könyv)
+- Г avg(ar) (könyv)
+- Г min(ar) (könyv) 
+- Г count(*) (σ targy = ’AB’ (könyv)) 
+- Г max(ar) (∂ targy = ’AB’ (könyv)) 
+- П cím ( ∂ ( ar > ( Г {avg(ar)} (könyv) ) ) (könyv)) 
+- Г count(*) (∂ ( ar > ( Г {avg(ar)} (könyv) ) ) (könyv))
+
+
+- П név, kód ( ∂ kategória = ’X’ (termek) ) 
+- П t.nev, gy.nev ( termek t ⋈ t.gyarto = gy.adoszam gyarto gy ) 
+- П gy.nev ( ∂ kategória = X (termek) t ⋈ t.gyarto = gy.adoszam gyarto gy) 
+- Г count(*) (∂ ear = Y (termek))
+- Г count(*) (gyarto gy ⋈ t.gyarto = gy.adoszam ∂ ear > Y (termek) t)
+
+
+- Г kategoria kategoria, avg(car)) ((termek)) 
+- Г termek termek, count(*) (komponens) 
+- Г t.nev t.nev, count(*) (komponens k ⋈ t.kod = k.termek termek t) 
+- П.a. * ( σ nev= X (termek) t ⋈ t.kód = k.termek komponens k ⋈ a.akod = k.alkatresz alkatresz a) 
+- П kategoria ( σ av > X (Г kategoria kategoria, avg(ar) av ((termek)))
+
+
+- Г sum(befizetes), sum(Eur) (ε befizetes/370 Eur (befizetes)) 
+- Гr.tajszam max(r.nev),sum(b.befizetes)(befizetes b ⋈ b.diak=r.tajszam resztvevo r) - Гr.tkod max(r.megnevezes),count(*) (befizetes b ⋈ b.kurzus=t.kod tanfolyam t) 
+- Гr.tkod max(r.megnevezes),count(b.kurzus) (befizetes b ⋈ + b.kurzus=t.kod tanfolyam t) 
+- П t.megnevezes (tanfolyam t ⋈ t.kod=k.tkod (П tkod (tanfolyam) \ П kurzus (jelentkezes)) k) 
+- П mn (σ db=( Г {max(db)} (X)) (X))
