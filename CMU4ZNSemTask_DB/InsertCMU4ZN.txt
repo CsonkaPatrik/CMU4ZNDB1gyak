@@ -16,16 +16,16 @@ INSERT INTO Rendeles VALUES(8,2500,'2022/11/23',1,'Hofi2');
 INSERT INTO Rendeles VALUES(9,2500,'2022/11/23',1,'nagyMiki');
 INSERT INTO Rendeles VALUES(10,12000,'2022/11/21',4,'nagyMiki');
 
-INSERT INTO Pizza VALUES(1,2500,'songoku');
-INSERT INTO Pizza VALUES(2,3000,'diablo');
-INSERT INTO Pizza VALUES(3,2500,'magyaros');
-INSERT INTO Pizza VALUES(4,3000,'almas');
-INSERT INTO Pizza VALUES(5,2500,'hawaii');
-INSERT INTO Pizza VALUES(6,2500,'margarita');
-INSERT INTO Pizza VALUES(7,2500,'gombas');
-INSERT INTO Pizza VALUES(8,3000,'sonkas');
-INSERT INTO Pizza VALUES(9,2500,'kukoricas');
-INSERT INTO Pizza VALUES(10,2500,'vega');
+INSERT INTO Pizza VALUES(1,2500,'songoku',7);
+INSERT INTO Pizza VALUES(2,3000,'diablo',3);
+INSERT INTO Pizza VALUES(3,2500,'magyaros',5);
+INSERT INTO Pizza VALUES(4,3000,'almas',3);
+INSERT INTO Pizza VALUES(5,2500,'hawaii',1);
+INSERT INTO Pizza VALUES(6,2500,'margarita',1);
+INSERT INTO Pizza VALUES(7,2500,'gombas',7);
+INSERT INTO Pizza VALUES(8,3000,'sonkas',1);
+INSERT INTO Pizza VALUES(9,2500,'kukoricas',8);
+INSERT INTO Pizza VALUES(10,2500,'vega',1);
 
 INSERT INTO Hozzavalok VALUES(1000,'paradicsomszosz',1);
 INSERT INTO Hozzavalok VALUES(3000,'sajt',2);
@@ -51,4 +51,8 @@ INSERT INTO Felvesz VALUES(3,1);
 INSERT INTO Felvesz VALUES(4,3);
 INSERT INTO Felvesz VALUES(5,2);
 
-
+INSERT INTO Feltet VALUES('szosz',1);
+INSERT INTO Feltet VALUES('teszta',3);
+INSERT INTO Feltet VALUES('kukoricas',8);
+INSERT INTO Feltet VALUES('magyaros',5);
+INSERT INTO Feltet VALUES('gombas',7);

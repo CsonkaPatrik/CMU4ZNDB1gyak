@@ -25,6 +25,7 @@ CREATE TABLE Pizza
   pizza_ID INT NOT NULL,
   Ar INT NOT NULL,
   Nev VARCHAR(20) NOT NULL,
+  feltet VARCHAR(20) NOT NULL,
   PRIMARY KEY (pizza_ID)
 );
 
@@ -61,4 +62,12 @@ CREATE TABLE Felvesz
   PRIMARY KEY (ID, Rang),
   FOREIGN KEY (ID) REFERENCES Rendeles(ID),
   FOREIGN KEY (Rang) REFERENCES Alkalmazott(Rang)
+);
+
+CREATE TABLE Feltet
+(
+  feltet VARCHAR(20) NOT NULL,
+  pizza_ID INT NOT NULL,
+  PRIMARY KEY (feltet, pizza_ID),
+  FOREIGN KEY (pizza_ID) REFERENCES Pizza(pizza_ID)
 );
